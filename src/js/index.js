@@ -1,3 +1,3 @@
 import burger from "../components/burger/burger";
 
-burger(".burger", ".nav");
+burger(".burger", ".header__inner");

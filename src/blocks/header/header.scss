@@ -9,28 +9,39 @@
   @include max(1080) {
     padding: 0;
   }
+}
 
+.header__top-inner {
   @include max($md) {
+    position: relative;
     display: flex;
     padding: 10px 15px;
     align-items: center;
     justify-content: space-between;
     background-color: $white;
+    z-index: 10;
   }
 }
 
 .header__inner {
+  position: relative;
+
   @include max($md) {
-    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $white;
+    transform: translateY(calc(-100% - 85px));
+
+    &--anim {
+      transition: transform 0.3s;
+    }
 
     &--open {
-      position: absolute;
-      top: 85px;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background-color: $white;
+      transform: translateY(0);
     }
   }
 }

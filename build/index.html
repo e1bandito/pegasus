@@ -9,13 +9,14 @@
 </head>
 
 <body>
-  <header class="header"><a class="header__logo">
-      <picture>
-        <source type="image/webp" srcset="img/logo@2x.webp 2x,  img/logo.webp 1x" />
-        <source srcset="img/logo@2x.png 2x,  img/logo.png 1x" /><img src="img/logo.png" alt="Pegasus" />
-      </picture>
-    </a>
-    <div class="header__inner header__inner header__inner--open">
+  <header class="header">
+    <div class="header__top-inner"><a class="header__logo">
+        <picture>
+          <source type="image/webp" srcset="img/logo@2x.webp 2x,  img/logo.webp 1x" />
+          <source srcset="img/logo@2x.png 2x,  img/logo.png 1x" /><img src="img/logo.png" alt="Pegasus" />
+        </picture>
+      </a><button class="burger"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button></div>
+    <div class="header__inner">
       <div class="header__wrap">
         <div class="header__contacts"><a class="header__link" href="tel:+442077198816">+44 20 7719 8816<span class="header__link-text">круглосуточно</span></a><a class="header__link" href="#">+44 777 100 7676<span class="header__link-text">Viber & WhatsUp</span></a></div>
         <div class="header__controls"><a class="btn header__btn btn btn--outline" href="#">Узнать тариф</a><button class="btn btn header__btn" type="button">Сделать заказ</button></div>
@@ -30,7 +31,7 @@
           <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
         </ul>
       </div>
-    </div><button class="burger"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+    </div>
   </header>
   <main class="main"></main>
   <footer class="footer">
@@ -73,7 +74,9 @@
             </div>
           </div>
           <div class="footer__contacts"><a class="btn footer__btn btn" href="#">Узнать тариф</a><button class="btn btn footer__btn" type="button">Сделать заказ</button>
-            <div class="footer__wrap"><a class="footer__link" href="tel:+442077198816">+44 20 7719 8816<span class="footer__link-text">круглосуточно</span></a><a class="footer__link" href="#">+44 777 100 7676<span class="footer__link-text">Viber & WhatsUp</span></a></div>
+            <div class="footer__wrap"><a class="footer__link" href="tel:+442077198816">+44 20 7719 8816<span class="footer__link-text">круглосуточно</span></a><a class="footer__link" href="#">+44 777 100 7676<span class="footer__link-text">Viber & WhatsUp</span></a>
+              <!--include ../../blocks/social/social-->
+            </div>
           </div>
         </div>
         <div class="footer__bottom">
