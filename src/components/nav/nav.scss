@@ -24,6 +24,10 @@
   position: relative;
   text-align: center;
 
+  &--active .nav__link {
+    color: $main-light;
+  }
+
   @include max($md) {
     padding: 5px 0;
   }

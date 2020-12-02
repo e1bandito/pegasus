@@ -21,6 +21,9 @@ body {
   font-weight: 500;
   line-height: 1.2;
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img {
@@ -55,4 +58,12 @@ a {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.main {
+  flex-grow: 1;
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
