@@ -1,3 +1,228 @@
 .header {
-  padding: 15px 0;
+  position: relative;
+  padding: 25px 0 0;
+
+  @include max(1080) {
+    padding: 0;
+  }
+
+  @include max(1080) {
+    padding: 0;
+  }
+
+  @include max($md) {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white;
+  }
+}
+
+.header__inner {
+  @include max($md) {
+    display: none;
+
+    &--open {
+      position: fixed;
+      top: 85px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+.header__logo {
+  position: absolute;
+  width: 213px;
+  height: 82px;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  @include max(1080) {
+    top: 20px;
+  }
+
+  @include max(900) {
+    top: 15px;
+  }
+
+  @include max($md) {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    height: auto;
+    margin: initial;
+    width: 160px;
+  }
+}
+
+.header__wrap {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 15px 24px;
+  display: flex;
+  align-items: center;
+
+  @include max(900) {
+    padding: 20px 15px;
+  }
+
+  @include max($md) {
+    order: 2;
+    flex-direction: column;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45.6%;
+    height: 1px;
+    background-color: $main-dark;
+
+    @include max(1080) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45.6%;
+    height: 1px;
+    background-color: $main-dark;
+
+    @include max(1080) {
+      content: none;
+    }
+  }
+}
+
+.header__contacts {
+  display: flex;
+
+  @include max(1080) {
+    flex-direction: column;
+  }
+
+  @include max($md) {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  @include max(430) {
+    flex-direction: column;
+  }
+}
+
+.header__link {
+  color: $main-dark;
+  font-size: 17px;
+  font-weight: 700;
+  overflow: hidden;
+  transition: color 0.3s;
+  letter-spacing: 0.6px;
+
+  &:hover {
+    color: $main-light;
+  }
+
+  &:first-child {
+    margin-right: 75px;
+
+    @include max(1080) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    @include max($md) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    @include max(430) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.header__link-text {
+  position: relative;
+  font-size: 10px;
+  color: $main-light;
+  align-self: flex-start;
+  text-transform: uppercase;
+  margin-top: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 11px);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    background-color: $main-light;
+  }
+}
+
+.header__controls {
+  margin-left: auto;
+  display: flex;
+
+  @include max(1080) {
+    flex-direction: column;
+  }
+
+  @include max($md) {
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  @include max(430) {
+    flex-direction: column;
+  }
+
+  & .header__btn {
+    padding: 6px 10px 7px;
+    min-width: 185px;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+
+      @include max(1080) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      @include max($md) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+
+      @include max(430) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.header__link {
+  display: flex;
+  flex-direction: column;
 }

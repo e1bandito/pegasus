@@ -11,11 +11,11 @@
 
   &:hover {
     & .burger__line {
-      background-color: teal;
+      background-color: $main-light;
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     display: block;
   }
 }
@@ -56,7 +56,7 @@
   display: block;
   width: calc(100% - 20px);
   height: 4px;
-  background-color: black;
+  background-color: $main-dark;
   transition: background-color 0.3s;
 
   &:nth-child(1) {

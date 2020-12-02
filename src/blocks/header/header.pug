@@ -1,4 +1,15 @@
 +b.HEADER.header
-  .container
+  +e.A.logo
+    +picture('logo', 'Pegasus', 'png')
+  +e.inner.header__inner--open
+    +e.wrap
+      +e.contacts
+        +e.A.link(href="tel:+442077198816") +44 20 7719 8816
+          +e.SPAN.link-text круглосуточно
+        +e.A.link(href="#") +44 777 100 7676
+          +e.SPAN.link-text Viber & WhatsUp
+      +e.controls
+        +lnk('Узнать тариф', '#', 'header__btn btn btn--outline')
+        +btn('Сделать заказ', 'button', 'btn header__btn')
     include ../../components/nav/nav
-    include ../../components/burger/burger
+  include ../../components/burger/burger

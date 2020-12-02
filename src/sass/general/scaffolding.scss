@@ -17,15 +17,10 @@ html {
 
 body {
   font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 500;
   line-height: 1.2;
-  background-color: #fcfcfc;
-}
-
-p {
-  font-family: Romul, sans-serif;
-  font-weight: 400;
+  background-color: $white;
 }
 
 img {
@@ -55,19 +50,9 @@ a {
 }
 
 .container {
-  max-width: 1380px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
-
-  @include max($xl) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @include max($md) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
 }

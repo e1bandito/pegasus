@@ -1,14 +1,26 @@
 [
   {
     "path": "index.html",
-    "title": "main"
+    "title": "Главная"
   },
   {
-    "path": "page2.html",
-    "title": "page2"
+    "path": "#",
+    "title": "Услуги"
   },
   {
-    "path": "page3.html",
-    "title": "page3"
+    "path": "#",
+    "title": "Автопарк"
+  },
+  {
+    "path": "#",
+    "title": "События"
+  },
+  {
+    "path": "#",
+    "title": "О нас"
+  },
+  {
+    "path": "#",
+    "title": "Контакты"
   }
 ]
