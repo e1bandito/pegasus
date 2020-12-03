@@ -67,4 +67,8 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-bg@2x.png");
+  }
 }

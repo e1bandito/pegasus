@@ -7,6 +7,10 @@
   background-size: 100%, cover;
   background-position: center bottom, center center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/footer-bg@2x.png");
+  }
 }
 
 .footer__top {

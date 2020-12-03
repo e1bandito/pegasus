@@ -1,11 +1,9 @@
 let burger = function (button, nav) {
   let burgerBtn = document.querySelector(button);
   let inner = document.querySelector(nav);
-  // let body = document.querySelector("body");
 
   if (burgerBtn) {
     burgerBtn.addEventListener("click", function () {
-      // body.classList.toggle("body-lock");
       burgerBtn.classList.add("burger__anim");
       burgerBtn.classList.toggle("burger__anim--open");
 

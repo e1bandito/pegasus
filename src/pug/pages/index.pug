@@ -1,5 +1,6 @@
 extends ../layout/layout
 include ../../blocks/btn/btn
+include ../../blocks/card/card
 
 block variables
   - var pageTitle = 'Главная'
@@ -8,5 +9,7 @@ block content
   include ../../blocks/header/header
 
   main.main
+    h1.visually-hidden pegasus luxury services
+    include ../../blocks/tabs/tabs
 
   include ../../blocks/footer/footer

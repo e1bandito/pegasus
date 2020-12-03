@@ -1,0 +1,8 @@
+mixin card(item)
+  +b.card
+    +e.img
+      +picture(item.img, item.title, 'jpg')
+    +e.H3.title= item.title
+    each text in item.text
+      +e.P.text= text
+    +lnk('Подробнее', '#', 'btn btn--outline card__btn')
